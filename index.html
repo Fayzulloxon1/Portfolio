@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>P</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<header>
+		<a href="#" class="logo">Portfolio</a>
+		<div class="menutoggle"></div>
+		<ul class="nav"> 
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#Services">Services</a></li>
+			<li><a href="#Portfolio">Portfolio</a></li>
+			<li><a href="#Contact">Contact</a></li>
+		</ul>
+	</header>
+	<section id="home">
+		<div class="content">
+			<h2>Fayzulloxon</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip exercitation.
+			</p>
+			<a href="#" class="btn">Contact Me</a>
+		</div>
+		<img src="k.png" class="men">
+	</section>
+	<section id="Services">
+		<div class="secText">
+			<h2> What I Am Great At</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.
+			</p>
+		</div>
+		<div class="content">
+			<div class="servicesBx">
+				<img src="tools.png">
+				<h3>Web Designing</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="t.png">
+				<h3>Web Devolopment</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="android.png">
+				<h3>Android Apps</h3>
+			</div>
+			<div class="servicesBx">
+				<img src="video-editing.png">
+				<h3>Video Editing</h3>
+			</div>
+		</div>
+		<div class="center">
+			<a href="#" class="btn">Hire Me</a>
+		</div>
+	</section>
+	<section id="Portfolio">
+		<div class="secText">
+			<h2>My Materpiece Collesction</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.
+			</p>
+		</div>
+		<div class="content">
+			<div class="imgBX">
+				<img src="shoes.jpg" width="430px" height="350px">
+			</div>
+			<div class="imgBX">
+				<img src="limon.jpg" width="430px" height="350px">
+			</div>
+			<div class="imgBX">
+				<img src="ananas.jpg" width="430px" height="350px">
+			</div>
+			<div class="imgBX">
+				<img src="paq.jpg" width="430px" height="350px">
+			</div>
+			<div class="imgBX">
+				<img src="russell-ferrer-8CFfmk4me_Q-unsplash.jpg" width="430px" height="350px">
+			</div>
+			<div class="imgBX">
+				<img src="d.jpg" width="430px" height="350px">
+			</div>
+		</div>
+		<div class="center">
+			<a href="#" class="btn">View More</a>
+		</div>
+	</section>
+	<section id="Contact">
+		<div class="secText">
+			<h2>Ways To Contact Me</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.
+			</p>
+		</div>
+		<div class="content">
+			<a href="#">
+				<ion-icon name="mail-outline"></ion-icon>fayzulloxon82@gmail.com
+			</a>
+			<a href="#">
+				<ion-icon name="call-outline"></ion-icon>+998 99 781 82 69
+			</a>
+			<a href="#">
+				<ion-icon name="logo-skype"></ion-icon>skype
+			</a>
+			<a href="#">
+				<ion-icon name="logo-whatsapp"></ion-icon>whatsapp
+			</a>
+		</div>
+		<div class="center">
+			<p class="copyrights">Copyright © 2023 <a href="#">Fayzulloxon</a>.All Right Reserved</p>
+		</div>
+	</section>
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		let list = document.querySelectorAll('.nav li')
+		function active(){
+			list.forEach((i) =>
+			i.classList.remove('active'))
+			this.classList.add('active')
+		}
+		list.forEach((i) =>
+			i,addEventListener('click',active))
+
+		let menutoggle = document.querySelector('.menutoggle')
+		let header = document.querySelector('header')
+		menutoggle.onclick = function(){
+			header.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
